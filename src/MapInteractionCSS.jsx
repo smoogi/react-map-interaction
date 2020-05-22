@@ -15,8 +15,8 @@ const MapInteractionCSS = (props) => {
           return (
             <div
               style={{
-                height: '100%',
-                width: '100%',
+                height: props.height ? props.height : "100%",
+                width: props.widht ? props.weight : "100%",
                 position: 'relative', // for absolutely positioned children
                 overflow: 'hidden',
                 touchAction: 'none', // Not supported in Safari :(
